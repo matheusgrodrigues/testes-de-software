@@ -14,6 +14,14 @@ Porém, como foi dito, a pirâmide é apenas uma forma de pensar a nossa estrat�
 
 ### Testes de UI
 
+#### Testes E2E
+
+Os testes end-to-end vão ainda além. Com eles, testamos os componentes trabalhando de forma integrada, mas pensando na jornada do usuário. Podemos utilizar ferramentas que automatizam ações que seriam realizadas pelo usuário em um contexto real. A aplicação é iniciada no browser, que navega para a nossa página e executa as ações que forem definidas, como clicando em botões, preenchendo campos e verificando se os resultados são conforme esperado.
+
+É necessário investir mais esforço para escrever esses testes e eles demoram mais para rodar, porém é o tipo de teste que nos traz maiss confiança, pois sabemos que a aplicação está funcionando exatamente como esperado para o fluxo que será utilizado pelo usuário. É importante ter cuidado para não testar a mesma coisa em testes diferentes, tornando esse tipo de teste ainda mais custoso.
+
+Algumas Ferramentas: Cypress (❤️), TestCafe e Puppeteer
+
 ### Testes de Integração
 
 Nós já sabemos que as unidades do nosso código estão funcionando corretamente de forma isolada, mas precisamos garantir que, quando uma parte se comunicar com a outra, as coisas vão funcionar como esperado. No front-end, eu acredito que os testes de integração são ainda mais importantes, porque queremos nos certificar de que nossos componentes funcionam conforme esperado quando estão sendo usados em conjunto.
