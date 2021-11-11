@@ -32,6 +32,14 @@ Esse tipo de teste não substitui os outros, pois tem objetivos diferentes e dev
 
 Algumas Ferramentas: Jest
 
+#### Testes de Acessibilidade
+
+Quando escrevemos software para o front-end, é muito importante manter em mente a acessibilidade. Queremos remover barreiras que possam impedir pessoas de utilizar nossa aplicação. Existem uma série de padrôes de como desenvolver software que é acessível para todos.
+
+Nós podemos ter testes automatizados que verificam esse aspecto do nosso código. Existem diversas ferramentas que nos permitem fazer isso, verificando se não temos nenhuma violação das diretrizes de acessibilidade na web.
+
+Algumas Ferramentas: Jest Axe e Pa11y
+
 ### Testes de Integração
 
 Nós já sabemos que as unidades do nosso código estão funcionando corretamente de forma isolada, mas precisamos garantir que, quando uma parte se comunicar com a outra, as coisas vão funcionar como esperado. No front-end, eu acredito que os testes de integração são ainda mais importantes, porque queremos nos certificar de que nossos componentes funcionam conforme esperado quando estão sendo usados em conjunto.
