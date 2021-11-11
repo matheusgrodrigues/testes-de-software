@@ -22,6 +22,16 @@ Os testes end-to-end vão ainda além. Com eles, testamos os componentes trabalh
 
 Algumas Ferramentas: Cypress (❤️), TestCafe e Puppeteer
 
+#### Testes de Snapshot
+
+Esse tipo de teste é focado na interface. A ideia é ter certeza que, quando fizermos quaisquer alterações, ela não terá mudanças inesperadas.
+
+Quando um teste de snapshot é criado, ele renderiza o componente, ou seja, transforma em algo que o navegador consegue entender e mostrar na tela. Em seguida, "Tira uma foto" do que foi renderizado, e guarda aquela imagem. Cada vez que os testes forem rodados, o que for renderizado é comparado a imagem que estava guardada. Se houver alguma diferença, o teste falha e sabemos que algo na nossa interface foi alterado, sem precisar rodar a aplicação inteira pra isso. Se fizermos uma alteração intencional na interface, basta atualizarmos a imagem daquele teste. 
+
+Esse tipo de teste não substitui os outros, pois tem objetivos diferentes e devem ser usados em conjunto. Os testes de snapshot ajudam a ver exatamente oque foi alterado e de uma forma bem simples.
+
+Algumas Ferramentas: Jest
+
 ### Testes de Integração
 
 Nós já sabemos que as unidades do nosso código estão funcionando corretamente de forma isolada, mas precisamos garantir que, quando uma parte se comunicar com a outra, as coisas vão funcionar como esperado. No front-end, eu acredito que os testes de integração são ainda mais importantes, porque queremos nos certificar de que nossos componentes funcionam conforme esperado quando estão sendo usados em conjunto.
