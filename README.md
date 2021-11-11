@@ -57,3 +57,23 @@ Esse tipo de teste é mais rápido e fácil de escrever e, por isso, é recomend
 Quando desenvolvemos software para o front-end, muitas vezes trabalhamos com componentes. Os testes unitários nos permitem garantir que eles funcionam como esperado de forma isolada, mas também é preciso saber se esses componentes funcionam quando utilizados de forma conjunta. Por exemplo, podemos alterar as propriedades que um componente espera receber e alterar seus testes unitários, garantindo que continua funcionando de forma isolada. Os testes unitários vão continuar passando. Porém, como saber que os outros componentes que o utilizam não vão parar de funcionar com essa mudança? Para isso, podemos pensar em outros tipos de teste.
 
 Algumas Ferramentas: Jest, Jasmine, Mocha e Chai
+
+## Outros
+
+### Verificação de Tipos estáticos
+
+Por mais que não seja exatamente um tipo de teste, a verificação de tipos estáticos pode ser muito útil quando trabalhamos com linguagens como Javascript. Utilizando ferramentas que trazem essa funcionalidade, podemos identificar problemas e possíveis erros antes mesmo de executas o código. Esse tipo de verificação pode tornarn nosso processo de desenvolvimento mais produtivo e trazer mais confiança sobre o código.
+
+Algumas Ferramentas: Flow e TypeScript
+
+## TDD (Test Driven Development)
+
+Outra forma de testarmos é ter o desenvolvimento sendo guiado por testes, escrevendo o teste antes mesmo de implementar o código. É o que conhecemos por TDD (Test Driven Developmente) e que também pode ser utilizado no front-end. Dessa forma, pensamos no comportamento que estamos esperando para aquela funcionalidade e escrevemos um teste para isso. O teste irá falhar, pois a funcionalidade ainda não existe. Logo após, implementamos o código e rodamos o teste novamente, que agora irá passar. Seguimos nesse fluxo também para trazer refatorações, garantindo que aquele pedaço de código faz somente o que é esperado dele e que está funcionando corretamente.
+
+## Legal, mas por onde eu começo?
+
+Implementar uma aplicação com uma estratégia de testes bem pensada é ótimo na teoria, mas na prática sabemos que é muito mais complicado. Diversas vezes grande parte da aplicação já foi escrita e com quase nenhum teste. Como saber onde começar a testar as funcionalidades que já existem?
+
+Nesse caso, acredito que faz mais sentido começar pelo fim. Podemos utilizar os testes E2E para garantir que a aplicação funciona conforme esperado pelo usuário, testando de forma automatizada os principais fluxos e garantindo que eles não irão quebrar quando fizermos alterações ou incluirmos novas funcionalidades. Depois, podemos começar a inserir os outros tipos de testes no nosso processo de desenvolvimento e aos poucos ir "equilibrando".
+
+Independente da estratégia de testes que decidirmos seguir, o importante é começar uma conversa e estimular a cultura de testes, tendo em mente que todo o time é responsável pela qualidade.
