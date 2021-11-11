@@ -16,4 +16,18 @@ Porém, como foi dito, a pirâmide é apenas uma forma de pensar a nossa estrat�
 
 ### Testes de Integração
 
+Nós já sabemos que as unidades do nosso código estão funcionando corretamente de forma isolada, mas precisamos garantir que, quando uma parte se comunicar com a outra, as coisas vão funcionar como esperado. No front-end, eu acredito que os testes de integração são ainda mais importantes, porque queremos nos certificar de que nossos componentes funcionam conforme esperado quando estão sendo usados em conjunto.
+
+Por exemplo, se tivermos um formulário contendo vários inputs diferentes e com um botão para enviar os dados. Queremos testar que, ao preencher todos os dados corretamente e clicar no botão, veremos a mensagem de sucesso esperada. Sendo cada input e botão um componente separado, não seria suficiente testar cada um isoladamente.
+
+Algumas Ferramentas: Jest e Cypress
+
 ### Testes Unitários
+
+É o tipo de testes que mais ouvimos falar. Podemos considerar uma unidade como sendo a menor parte de um código. Pode ser uma função, por exemplo. Quando falamos de testes unitários, estamos verificando que essa pequena parte de código faz oque deveria fazer, independente de outras unidades.
+
+Esse tipo de teste é mais rápido e fácil de escrever e, por isso, é recomendado escrever muitos destes. Quanto mais partes do código conseguirmos testar com esse tipo de teste, menos vamos precisar fazer os outros tipos de testes, que são mais custosos.
+
+Quando desenvolvemos software para o front-end, muitas vezes trabalhamos com componentes. Os testes unitários nos permitem garantir que eles funcionam como esperado de forma isolada, mas também é preciso saber se esses componentes funcionam quando utilizados de forma conjunta. Por exemplo, podemos alterar as propriedades que um componente espera receber e alterar seus testes unitários, garantindo que continua funcionando de forma isolada. Os testes unitários vão continuar passando. Porém, como saber que os outros componentes que o utilizam não vão parar de funcionar com essa mudança? Para isso, podemos pensar em outros tipos de teste.
+
+Algumas Ferramentas: Jest, Jasmine, Mocha e Chai
