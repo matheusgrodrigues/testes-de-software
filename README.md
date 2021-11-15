@@ -1,4 +1,21 @@
-# testes-de-software
+
+
+- [Sobre](#testes-de-software)
+- [Tipos de testes](#tipos-de-testes)
+  - [Testes manuais](#testes-manuais)
+  - [Testes de UI](#testes-de-ui)
+  - [Testes E2E](#testes-e2e)
+  - [Testes de snapshot](#testes-de-snapshot)
+  - [Testes de acessibilidade](#testes-de-acessibilidade)
+  - [Testes de Integração](#testes-de-integracao)
+  - [Testes unitarios](#testes-unitarios)
+- [Outros](#outros)
+  - [Verificação de tipos estáticos](#verificacao-de-tipos-estaticos)
+  - [BDD - (Behavior Driven Development)](#bdd-behavior-driven-development)
+  - [TDD - (Test Driven Development)](#tdd-test-driven-development)
+  - [Legal, mas por onde eu começo ?](#legal-mais-por-onde-eu-comeco)
+
+# Testes de software
 
 No desenvolvimento Ágil, testar é parte da nossa rotina como pessoas desenvolvedoras. È tão importante que, há muito tempo atrás, Mike Cohn introduziu o conceito da Pirâmide de Testes, buscando apresentar uma forma de como pensar a estratégia de testes.
 
@@ -10,9 +27,9 @@ Porém, como foi dito, a pirâmide é apenas uma forma de pensar a nossa estrat�
 
 ## Tipos de testes
 
-### Testes Manuais
+#### Testes Manuais
 
-### Testes de UI
+#### Testes de UI
 
 #### Testes E2E
 
@@ -40,7 +57,7 @@ Nós podemos ter testes automatizados que verificam esse aspecto do nosso códig
 
 Algumas Ferramentas: Jest Axe e Pa11y
 
-### Testes de Integração
+#### Testes de Integração
 
 Nós já sabemos que as unidades do nosso código estão funcionando corretamente de forma isolada, mas precisamos garantir que, quando uma parte se comunicar com a outra, as coisas vão funcionar como esperado. No front-end, eu acredito que os testes de integração são ainda mais importantes, porque queremos nos certificar de que nossos componentes funcionam conforme esperado quando estão sendo usados em conjunto.
 
@@ -48,7 +65,7 @@ Por exemplo, se tivermos um formulário contendo vários inputs diferentes e com
 
 Algumas Ferramentas: Jest e Cypress
 
-### Testes Unitários
+#### Testes Unitários
 
 É o tipo de testes que mais ouvimos falar. Podemos considerar uma unidade como sendo a menor parte de um código. Pode ser uma função, por exemplo. Quando falamos de testes unitários, estamos verificando que essa pequena parte de código faz oque deveria fazer, independente de outras unidades.
 
@@ -58,19 +75,21 @@ Quando desenvolvemos software para o front-end, muitas vezes trabalhamos com com
 
 Algumas Ferramentas: Jest, Jasmine, Mocha e Chai
 
-## Outros
+### Outros
 
-### Verificação de Tipos estáticos
+#### Verificacao de Tipos estaticos
 
 Por mais que não seja exatamente um tipo de teste, a verificação de tipos estáticos pode ser muito útil quando trabalhamos com linguagens como Javascript. Utilizando ferramentas que trazem essa funcionalidade, podemos identificar problemas e possíveis erros antes mesmo de executas o código. Esse tipo de verificação pode tornarn nosso processo de desenvolvimento mais produtivo e trazer mais confiança sobre o código.
 
 Algumas Ferramentas: Flow e TypeScript
 
-## TDD (Test Driven Development)
+#### BDD Behavior Driven Development
+
+#### TDD Test Driven Development
 
 Outra forma de testarmos é ter o desenvolvimento sendo guiado por testes, escrevendo o teste antes mesmo de implementar o código. É o que conhecemos por TDD (Test Driven Developmente) e que também pode ser utilizado no front-end. Dessa forma, pensamos no comportamento que estamos esperando para aquela funcionalidade e escrevemos um teste para isso. O teste irá falhar, pois a funcionalidade ainda não existe. Logo após, implementamos o código e rodamos o teste novamente, que agora irá passar. Seguimos nesse fluxo também para trazer refatorações, garantindo que aquele pedaço de código faz somente o que é esperado dele e que está funcionando corretamente.
 
-## Legal, mas por onde eu começo?
+#### Legal mas por onde eu começo 
 
 Implementar uma aplicação com uma estratégia de testes bem pensada é ótimo na teoria, mas na prática sabemos que é muito mais complicado. Diversas vezes grande parte da aplicação já foi escrita e com quase nenhum teste. Como saber onde começar a testar as funcionalidades que já existem?
 
